@@ -1,0 +1,13 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:aliceblue;
+}
+
+.button1 {background-color:tan; width: 110px;height:45px; position: relative;margin: auto;display: flex; left:-80 ;top: 40 ;color:sienna; font-size: 20px; font-weight: bold;} 
+.button2 {background-color:tan;width: 110px;height: 45px;position: relative;margin: auto;display: flex; left:100 ;top: -5 ;color:sienna; font-size: 20px; font-weight: bold;} 
+.button3 {background-color:tan;width: 110px;height: 45px; position: relative;margin: auto;display: flex; left:-80 ;top: 20 ;color:sienna; font-size: 20px; font-weight: bold;} 
+
+.button4 {background-color:tan;width: 110px;height: 45px; position: relative;margin: auto;display: flex; left:100 ;top: -25 ;color:sienna; font-size: 20px; font-weight: bold;} 
+.button5 {background-color:tan;width: 110px;height: 45px; position: relative;margin: auto;display: flex; left:-80 ;top: 0 ;color:sienna; font-size: 20px; font-weight: bold;} 
+.button6 {background-color:tan;width: 110px;height: 45px; position: relative;margin: auto;display: flex; left:100 ;top: -45 ;color:sienna; font-size: 20px; font-weight: bold;} 
