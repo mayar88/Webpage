@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PES Project</title>
+    <style>
+        /* Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 30px;
+            color: white;
+            position: relative;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu, .mobile-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a, .mobile-menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .navbar .menu a:hover, .mobile-menu a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            right: 30px;
+            width: 200px;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        /* Video Styling */
+        #background-video {
+            width: 100%;
+            max-height: 400px; /* Limit the height */
+            object-fit: cover; /* Crop if necessary */
+        }
+
+        /* Doctor Section */
+        .doctor-section {
+            display: flex;
+            flex-wrap: wrap; /* Wrap on smaller screens */
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .doctor-description {
+            max-width: 500px;
+            text-align: justify;
+        }
+
+        .doctor-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Transformation Section */
+        .transformation-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjust columns */
+            gap: 10px;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .photo-grid img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact-us-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .contact-footer {
+            margin-top: 20px;
+        }
+
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .doctor-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .doctor-description, .contact-item {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Clinic Name</div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#services">Our Services</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Our Services</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Fullscreen Video -->
+    <video autoplay muted id="background-video">
+        <source src="https://raw.githubusercontent.com/mayar88/Webpage/refs/heads/main/Perfect%20smile%20for%20Everyone%20(2).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Doctor Section -->
+    <div class="doctor-section">
+        <div class="doctor-description">
+            <h3>Dr. Mai</h3>
+            <p>Dr. Mai is a renowned specialist in dental care with over 15 years of experience. Her commitment to providing the highest level of care has made her a trusted name in the community.</p>
+        </div>
+        <div class="doctor-image">
+            <img src="https://raw.githubusercontent.com/mayar88/Webpage/refs/heads/main/Untitled%20design.png" alt="Dr. Mai">
+        </div>
+    </div>
+
+    <!-- Transformation Section -->
+    <div class="transformation-section">
+        <h3>Transform Your Smile</h3>
+        <div class="photo-grid">
+            <img src="https://raw.githubusercontent.com/mayar88/Webpage/refs/heads/main/pathien-1.jpg" alt="Transformation 1">
+            <img src="https://raw.githubusercontent.com/mayar88/Webpage/refs/heads/main/pathien-2.jpg" alt="Transformation 2">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-us-section">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>Find Your Nearest Branch</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+
+</body>
+</html>
