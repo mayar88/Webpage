@@ -1,0 +1,61 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f9f9;
+}
+
+/* Background Image Styling */
+#background-image {
+    width: 100%; /* Full width of the screen */
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover; /* Scale the image to cover the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place behind content */
+}
+
+/* Text Overlay Styling */
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    z-index: 1; /* Ensure text is above the background */
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    z-index: 1; /* Ensure text is above the background */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #background-image {
+        width: 100%; /* Full width of the screen */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Show the entire image */
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
